@@ -2,7 +2,11 @@ buildVariable: false
 familyName: Noto Sans Cypriot
 googleFonts: true
 includeSubsets:
-- from: Noto Sans
-  name: GF_Latin_Core
+  - from: Noto Sans
+    name: GF_Latin_Core
+  - from: Noto Sans Linear B
+    ranges:
+      - start: 0x10100
+        end: 0x10133
 sources:
-- NotoSansCypriot.designspace
+  - NotoSansCypriot.designspace
